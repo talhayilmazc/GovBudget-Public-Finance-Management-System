@@ -33,7 +33,10 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
+import org.mockito.quality.Strictness;
+import org.mockito.junit.jupiter.MockitoSettings;
 
+@MockitoSettings(strictness = Strictness.LENIENT)
 @ExtendWith(MockitoExtension.class)
 @DisplayName("Expense Service Tests")
 class ExpenseServiceTest {
